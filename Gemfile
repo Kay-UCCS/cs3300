@@ -38,8 +38,8 @@ gem 'mini_racer'
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'
 end
-
-group
+ 
+#comment
 
 group :development, :test do
   gem 'capybara'
