@@ -6,6 +6,8 @@ end
 
 require 'rails_helper'
 
+
+
 RSpec.feature "Projects", type: :feature do
   context "Create new project" do
     before(:each) do
@@ -14,6 +16,7 @@ RSpec.feature "Projects", type: :feature do
         fill_in "Title", with: "Test title"
       end
     end
+
 
     scenario "should be successful" do
       fill_in "Description", with: "Test description"
