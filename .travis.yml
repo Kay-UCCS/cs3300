@@ -13,7 +13,7 @@ script:
  
 deploy:
  provider: heroku
- api_key: d79a41d5-1b8f-404f-8553-5f0d9e00dabf
+ api_key: xaclN4hn0eA9v0HXX9S9Dw
  app: fast-tundra-11242
  run: "rake db:migrate"
  on:
