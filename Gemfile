@@ -25,18 +25,19 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
   gem 'rails_12factor'
 end
-
+#Use simplecov for tests
 gem 'simplecov', require: false, group: :test
-
 gem 'mini_racer'
-
+# Use device to perform authentication
 gem 'devise'
-  
+#use bootstrap for page detailing
+gem 'bootstrap', '~> 4.6.0'
+#add jquery-gems
+gem 'jquery-rails'
 group :development, :test do
   gem 'rspec-rails', '~> 3.7'
 end

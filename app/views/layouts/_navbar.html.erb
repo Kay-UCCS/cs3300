@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Kay's Projects</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <span class="navbar-text">
+    Kay's Projects display implemented ideas that has been 
+    completed by the author of the page. Visitors can access and
+    view descriptions on several types of projects. 
+    For more information on the Author, click the "About" button on the
+    dropdown menu.
+  </span>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <%= link_to 'Home', root_path, :class => 'navbar-link' %>    
+     </li>
+     <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <%= link_to 'About', about_path, :class => 'navbar-link' %> 
+        </div>
+      </li>
+
+     <% if user_signed_in? %>
+      <li class="nav-item">
+      <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+      </li>
+      <% else %>
+      <li class="nav-item">
+      <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+      <%= link_to "Sign In", new_user_session_path, :class => 'navbar-link'  %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</nav>

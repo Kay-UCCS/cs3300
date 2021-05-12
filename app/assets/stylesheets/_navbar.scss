@@ -1,0 +1,23 @@
+.navbar {
+    border-radius: 0;
+    margin-bottom: 20px;
+    background-color: rgb(0, 0, 0);
+    .navbar-brand {
+        font-weight: bolder;
+        color: rgb(150, 48, 233);
+        .light {
+            font-weight: 300;
+            color: rgb(0, 0, 0);
+        }
+    }
+    
+    .navbar-nav li a{
+      color: rgb(150, 48, 233) !important;
+      }
+    .navbar-toggler {
+        outline: none;
+    }
+    
+
+
+}

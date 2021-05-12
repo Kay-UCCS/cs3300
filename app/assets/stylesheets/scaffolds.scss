@@ -1,6 +1,27 @@
+
+h1 {
+  font-size: 20px;
+  font-family: "Times New Roman";
+  padding-top: 70px;  
+}
+
+.button {
+  background-color: rgb(150, 48, 233);
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  border-radius: 200px;
+}
+
+
 body {
-  background-color: #fff;
-  color: #333;
+  background: transparent;
+  color: rgb(150, 48, 233);
   margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -14,16 +35,16 @@ p, ol, ul, td {
 }
 
 pre {
-  background-color: #eee;
+  background-color: rgb(0, 0, 0);
   padding: 10px;
   font-size: 11px;
 }
 
 a {
-  color: #000;
+  color: rgb(0, 0, 0);
 
   &:visited {
-    color: #666;
+    color: rgb(0, 0, 0);
   }
 
   &:hover {
@@ -70,7 +91,7 @@ div {
     font-size: 12px;
     margin: -7px -7px 0;
     background-color: #c00;
-    color: #fff;
+    color: rgb(255, 255, 255);
   }
 
   ul li {
